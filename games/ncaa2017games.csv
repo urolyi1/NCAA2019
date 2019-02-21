@@ -1,0 +1,64 @@
+Team_1,Team_2,Team_1_Score,Team_2_Score,Result
+Gonzaga,South Dakota State,66,46,0
+Northwestern,Vanderbilt,68,66,0
+Princeton,Notre Dame,58,60,1
+Bucknell,West Virginia,80,86,1
+Xavier,Maryland,76,65,1
+Florida Gulf Coast,Florida State,80,86,1
+VCU,Saint Mary's,77,85,1
+Arizona,North Dakota,100,82,0
+Northwestern,Gonzaga,73,79,1
+West Virginia,Notre Dame,83,71,1
+Xavier,Florida State,91,66,0
+Saint Mary's,Arizona,60,69,0
+West Virginia,Gonzaga,58,61,1
+Arizona,Xavier,71,73,1
+Xavier,Gonzaga,59,83,1
+UC-Davis,Kansas,62,100,1
+Miami (FL),Michigan State,58,78,0
+Iowa State,Nevada,84,73,0
+Purdue,Vermont,80,70,0
+Rhode Island,Creighton,84,72,1
+Oregon,Iona,93,77,0
+Michigan,Oklahoma State,92,91,0
+Louisville,Jacksonville State,78,63,0
+Michigan State,Kansas,70,90,1
+Iowa State,Purdue,76,80,0
+Rhode Island,Oregon,72,75,0
+Michigan,Louisville,73,69,0
+Purdue,Kansas,66,98,1
+Oregon,Michigan,69,68,0
+Kansas,Oregon,60,74,0
+UNC,Texas Southern,103,64,0
+Seton Hall,Arkansas,71,77,1
+Minnesota,Middle Tennessee,72,81,0
+Winthrop,Butler,64,76,1
+Cincinnati,Kansas State,75,61,0
+UCLA,Kent State,97,80,0
+Dayton,Wichita State,58,64,0
+Northern Kentucky,Kentucky,70,79,1
+Arkansas,UNC,65,72,1
+Butler,Middle Tennessee,74,65,1
+Cincinnati,UCLA,67,79,0
+Wichita State,Kentucky,62,65,0
+UNC,Butler,92,80,0
+Kentucky,UCLA,86,75,1
+UNC,Kentucky,75,73,0
+Villanova,Mount St. Mary's,76,56,0
+Virginia Tech,Wisconsin,74,84,1
+Virginia,UNC Wilmington,76,71,0
+Florida,ETSU,80,65,0
+USC,SMU,66,65,1
+New Mexico State,Baylor,73,91,1
+Marquette,South Carolina,73,93,1
+Duke,Troy,87,65,0
+Villanova,Wisconsin,62,65,0
+Virginia,Florida,39,65,0
+USC,Baylor,78,82,0
+South Carolina,Duke,88,81,0
+Wisconsin,Florida,83,84,0
+Baylor,South Carolina,50,70,0
+Florida,South Carolina,70,77,0
+Oregon,UNC,76,77,0
+Gonzaga,South Carolina,77,73,1
+Gonzaga,UNC,65,71,1
