@@ -76,7 +76,7 @@ pom2ref = {'Arkansas Little Rock':'Little Rock','Alabama St.': 'Alabama State', 
            'Savannah St.': 'Savannah State', 'South Carolina St.': 'South Carolina State', 'USC Upstate': 'South Carolina Upstate', 'South Dakota St.': 'South Dakota State', \
            'Southeast Missouri St.': 'Southeast Missouri State', 'USC': 'Southern California', 'SMU': 'Southern Methodist', 'Southern Miss': 'Southern Mississippi', 'St. Francis NY': 'St. Francis (NY)', \
            "St. John's": "St. John's (NY)", 'Tennessee St.': 'Tennessee State', 'Tennessee Martin': 'Tennessee-Martin', 'Texas A&M Corpus Chris': 'Texas A&M-Corpus Christi', 'TCU': 'Texas Christian', \
-           'Texas St.': 'Texas State', 'UT Arlington': 'Texas-Arlington', 'UTEP': 'Texas-El Paso', 'UT Rio Grande Valley': 'Texas-Rio Grande Valley', 'UTSA': 'Texas-San Antonio', 'UC Davis': 'UC-Davis', \
+           'Texas St.': 'Texas State', 'UT Arlington': 'Texas-Arlington', 'UTEP': 'Texas-El Paso', 'Troy St.':"Troy",'UT Rio Grande Valley': 'Texas-Rio Grande Valley', 'UTSA': 'Texas-San Antonio', 'UC Davis': 'UC-Davis', \
            'UC Irvine': 'UC-Irvine', 'UC Riverside': 'UC-Riverside', 'UC Santa Barbara': 'UC-Santa Barbara', 'California': 'University of California', 'Utah St.': 'Utah State', \
            'VCU': 'Virginia Commonwealth', 'Washington St.': 'Washington State','Weber St.': 'Weber State', 'Wichita St.': 'Wichita State', 'Wright St.': 'Wright State', 'Youngstown St.': 'Youngstown State'}
 
