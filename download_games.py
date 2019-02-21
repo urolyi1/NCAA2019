@@ -22,7 +22,7 @@ def parse_region(region_html, num_games, year):
 
         #iterate through all games
         for i in range(0, num_games[c]):
-            #find 
+            #find
             data = teams[3 * i].find_all('a')
             team1 = data[0].get_text()
             team1_score = data[1].get_text()
@@ -40,6 +40,7 @@ def parse_region(region_html, num_games, year):
                 win_score = team2_score
                 lose_score = team1_score
 
+            # randomly insert winner and loser into csv
             rand = np.random.randint(0, 2)
             if rand:
                 toWrite = [winner, loser, win_score, lose_score, 1]
@@ -51,21 +52,28 @@ def parse_region(region_html, num_games, year):
                 spamwriter = csv.writer(page, delimiter=',')
                 spamwriter.writerow(toWrite)
 
+# write data for each year
 def write_year(year):
+
+    # get full HTML and parse with soup
     r = requests.get("https://www.sports-reference.com/cbb/postseason/" + str(year) + "-ncaa.html")
     soup = BeautifulSoup(r.text, 'html.parser')
 
+    # create file and insert header
     with open("games/ncaa" + str(year) + "games.csv", "w",newline = "") as page:
         spamwriter = csv.writer(page, delimiter = ',')
         spamwriter.writerow(["Team_1", "Team_2", "Team_1_Score", "Team_2_Score", "Result"])
+
+    # or each region parse data
     for i in range(0, len(regions)):
         region = soup.find(id=regions[i])
         parse_region(region, games_per_round, year)
 
+    #parse final four
     final_four = soup.find(id="national")
     parse_region(final_four, final_four_games, year)
 
-
+#generate data for all years
 def generate():
     for i in range(2012, 2019):
         write_year(i)
