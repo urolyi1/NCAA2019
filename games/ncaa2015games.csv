@@ -1,64 +1,64 @@
 Team_1,Team_2,Team_1_Score,Team_2_Score,Result
-Wisconsin,Coastal Carolina,86,72,0
-Oklahoma State,Oregon,73,79,1
-Arkansas,Wofford,56,53,0
-UNC,Harvard,67,65,0
-Xavier,Ole Miss,76,57,0
+Coastal Carolina,Wisconsin,72,86,0
+Oregon,Oklahoma State,79,73,1
+Arkansas,Wofford,56,53,1
+UNC,Harvard,67,65,1
+Ole Miss,Xavier,57,76,0
 Georgia State,Baylor,57,56,1
 VCU,Ohio State,72,75,0
-Texas Southern,Arizona,72,93,1
-Wisconsin,Oregon,72,65,0
-Arkansas,UNC,78,87,0
-Xavier,Georgia State,75,67,0
-Arizona,Ohio State,73,58,1
-Wisconsin,UNC,79,72,0
-Arizona,Xavier,68,60,1
-Arizona,Wisconsin,78,85,1
-Hampton,Kentucky,56,79,1
-Cincinnati,Purdue,66,65,0
-West Virginia,Buffalo,68,62,0
-Valparaiso,Maryland,62,65,1
-Butler,Texas,56,48,0
-Northeastern,Notre Dame,65,69,1
-Indiana,Wichita State,76,81,1
-Kansas,New Mexico State,75,56,0
-Kentucky,Cincinnati,64,51,0
-Maryland,West Virginia,59,69,1
-Notre Dame,Butler,67,64,1
-Kansas,Wichita State,65,78,1
-West Virginia,Kentucky,39,78,1
-Wichita State,Notre Dame,70,81,1
-Notre Dame,Kentucky,66,68,1
-Duke,Robert Morris,85,56,0
-St. John's (NY),San Diego State,64,76,1
-Utah,Stephen F. Austin,57,50,0
-Eastern Washington,Georgetown,74,84,1
+Texas Southern,Arizona,72,93,0
+Oregon,Wisconsin,65,72,0
+UNC,Arkansas,87,78,1
+Xavier,Georgia State,75,67,1
+Ohio State,Arizona,58,73,0
+Wisconsin,UNC,79,72,1
+Xavier,Arizona,60,68,0
+Wisconsin,Arizona,85,78,1
+Kentucky,Hampton,79,56,1
+Cincinnati,Purdue,66,65,1
+West Virginia,Buffalo,68,62,1
+Valparaiso,Maryland,62,65,0
+Texas,Butler,48,56,0
+Northeastern,Notre Dame,65,69,0
+Indiana,Wichita State,76,81,0
+New Mexico State,Kansas,56,75,0
+Kentucky,Cincinnati,64,51,1
+Maryland,West Virginia,59,69,0
+Butler,Notre Dame,64,67,0
+Kansas,Wichita State,65,78,0
+Kentucky,West Virginia,78,39,1
+Wichita State,Notre Dame,70,81,0
+Notre Dame,Kentucky,66,68,0
+Duke,Robert Morris,85,56,1
+San Diego State,St. John's (NY),76,64,1
+Utah,Stephen F. Austin,57,50,1
+Georgetown,Eastern Washington,84,74,1
 SMU,UCLA,59,60,0
 Alabama-Birmingham,Iowa State,60,59,1
-Davidson,Iowa,52,83,1
-Gonzaga,North Dakota State,86,76,0
-San Diego State,Duke,49,68,1
-Utah,Georgetown,75,64,0
-UCLA,Alabama-Birmingham,92,75,0
+Davidson,Iowa,52,83,0
+North Dakota State,Gonzaga,76,86,0
+San Diego State,Duke,49,68,0
+Utah,Georgetown,75,64,1
+Alabama-Birmingham,UCLA,75,92,0
 Iowa,Gonzaga,68,87,0
-Utah,Duke,57,63,1
-UCLA,Gonzaga,62,74,0
-Gonzaga,Duke,52,66,1
-Lafayette,Villanova,52,93,1
-NC State,LSU,66,65,0
-Wyoming,Northern Iowa,54,71,1
-UC-Irvine,Louisville,55,57,1
+Duke,Utah,63,57,1
+Gonzaga,UCLA,74,62,1
+Duke,Gonzaga,66,52,1
+Villanova,Lafayette,93,52,1
+NC State,LSU,66,65,1
+Northern Iowa,Wyoming,71,54,1
+Louisville,UC-Irvine,57,55,1
 Providence,Dayton,53,66,0
-Oklahoma,Albany (NY),69,60,0
-Michigan State,Georgia,70,63,0
-Belmont,Virginia,67,79,1
-Villanova,NC State,68,71,0
+Oklahoma,Albany (NY),69,60,1
+Michigan State,Georgia,70,63,1
+Virginia,Belmont,79,67,1
+NC State,Villanova,71,68,1
 Northern Iowa,Louisville,53,66,0
 Oklahoma,Dayton,72,66,1
-Virginia,Michigan State,54,60,1
-Louisville,NC State,75,65,1
+Virginia,Michigan State,54,60,0
+NC State,Louisville,65,75,0
 Michigan State,Oklahoma,62,58,1
-Michigan State,Louisville,76,70,1
-Michigan State,Duke,61,81,1
-Kentucky,Wisconsin,64,71,0
-Wisconsin,Duke,63,68,1
+Louisville,Michigan State,70,76,0
+Michigan State,Duke,61,81,0
+Wisconsin,Kentucky,71,64,1
+Wisconsin,Duke,63,68,0

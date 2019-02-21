@@ -1,64 +1,64 @@
 Team_1,Team_2,Team_1_Score,Team_2_Score,Result
-Arizona,Weber State,68,59,0
-Oklahoma State,Gonzaga,77,85,1
-North Dakota State,Oklahoma,80,75,1
-San Diego State,New Mexico State,73,69,0
-Baylor,Nebraska,74,60,0
-Louisiana,Creighton,66,76,1
-BYU,Oregon,68,87,1
-Wisconsin,American,75,35,0
-Gonzaga,Arizona,61,84,1
+Weber State,Arizona,59,68,0
+Gonzaga,Oklahoma State,85,77,1
+Oklahoma,North Dakota State,75,80,0
+New Mexico State,San Diego State,69,73,0
+Nebraska,Baylor,60,74,0
+Creighton,Louisiana,76,66,1
+Oregon,BYU,87,68,1
+Wisconsin,American,75,35,1
+Gonzaga,Arizona,61,84,0
 San Diego State,North Dakota State,63,44,1
-Creighton,Baylor,55,85,1
+Baylor,Creighton,85,55,1
 Wisconsin,Oregon,85,77,1
-San Diego State,Arizona,64,70,1
-Wisconsin,Baylor,69,52,1
+Arizona,San Diego State,70,64,1
+Baylor,Wisconsin,52,69,0
 Wisconsin,Arizona,64,63,1
-Cal Poly,Wichita State,37,64,1
-Kansas State,Kentucky,49,56,1
-NC State,Saint Louis,80,83,1
-Manhattan,Louisville,64,71,1
+Cal Poly,Wichita State,37,64,0
+Kansas State,Kentucky,49,56,0
+Saint Louis,NC State,83,80,1
+Manhattan,Louisville,64,71,0
 UMass,Tennessee,67,86,0
-Duke,Mercer,71,78,0
-Arizona State,Texas,85,87,1
-Wofford,Michigan,40,57,1
+Mercer,Duke,78,71,1
+Texas,Arizona State,87,85,1
+Wofford,Michigan,40,57,0
 Wichita State,Kentucky,76,78,0
 Saint Louis,Louisville,51,66,0
-Mercer,Tennessee,63,83,1
-Michigan,Texas,79,65,1
-Kentucky,Louisville,74,69,0
+Tennessee,Mercer,83,63,1
+Texas,Michigan,65,79,0
+Louisville,Kentucky,69,74,0
 Tennessee,Michigan,71,73,0
-Kentucky,Michigan,75,72,0
-Albany (NY),Florida,55,67,1
+Kentucky,Michigan,75,72,1
+Florida,Albany (NY),67,55,1
 Pitt,Colorado,77,48,1
 VCU,Stephen F. Austin,75,77,0
-UCLA,Tulsa,76,59,0
-Ohio State,Dayton,59,60,0
-Western Michigan,Syracuse,53,77,1
+Tulsa,UCLA,59,76,0
+Dayton,Ohio State,60,59,1
+Syracuse,Western Michigan,77,53,1
 New Mexico,Stanford,53,58,0
-Kansas,Eastern Kentucky,80,69,0
-Florida,Pitt,61,45,0
+Eastern Kentucky,Kansas,69,80,0
+Florida,Pitt,61,45,1
 UCLA,Stephen F. Austin,77,60,1
-Dayton,Syracuse,55,53,0
-Stanford,Kansas,60,57,0
-Florida,UCLA,79,68,0
-Dayton,Stanford,82,72,0
-Florida,Dayton,62,52,0
-Coastal Carolina,Virginia,59,70,1
-George Washington,Memphis,66,71,1
+Syracuse,Dayton,53,55,0
+Kansas,Stanford,57,60,0
+Florida,UCLA,79,68,1
+Dayton,Stanford,82,72,1
+Dayton,Florida,52,62,0
+Coastal Carolina,Virginia,59,70,0
+Memphis,George Washington,71,66,1
 Cincinnati,Harvard,57,61,0
-Delaware,Michigan State,78,93,1
-UNC,Providence,79,77,0
-North Carolina Central,Iowa State,75,93,1
-UConn,St. Joseph's,89,81,0
-Villanova,Milwaukee,73,53,0
-Virginia,Memphis,78,60,0
+Michigan State,Delaware,93,78,1
+UNC,Providence,79,77,1
+North Carolina Central,Iowa State,75,93,0
+St. Joseph's,UConn,81,89,0
+Villanova,Milwaukee,73,53,1
+Virginia,Memphis,78,60,1
 Harvard,Michigan State,73,80,0
-Iowa State,UNC,85,83,1
-Villanova,UConn,65,77,1
-Michigan State,Virginia,61,59,1
-Iowa State,UConn,76,81,0
-Michigan State,UConn,54,60,0
-Florida,UConn,53,63,1
+UNC,Iowa State,83,85,0
+Villanova,UConn,65,77,0
+Virginia,Michigan State,59,61,0
+UConn,Iowa State,81,76,1
+UConn,Michigan State,60,54,1
+Florida,UConn,53,63,0
 Wisconsin,Kentucky,73,74,0
-UConn,Kentucky,60,54,0
+Kentucky,UConn,54,60,0

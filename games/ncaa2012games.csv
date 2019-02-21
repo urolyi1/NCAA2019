@@ -1,64 +1,64 @@
 Team_1,Team_2,Team_1_Score,Team_2_Score,Result
-Michigan State,LIU-Brooklyn,89,67,0
-Saint Louis,Memphis,61,54,1
-Long Beach State,New Mexico,68,75,1
-Louisville,Davidson,69,62,0
-Murray State,Colorado State,58,41,0
-Marquette,BYU,88,68,0
-Virginia,Florida,45,71,1
-Norfolk State,Missouri,86,84,1
-Michigan State,Saint Louis,65,61,0
+LIU-Brooklyn,Michigan State,67,89,0
+Memphis,Saint Louis,54,61,0
+Long Beach State,New Mexico,68,75,0
+Louisville,Davidson,69,62,1
+Murray State,Colorado State,58,41,1
+BYU,Marquette,68,88,0
+Florida,Virginia,71,45,1
+Missouri,Norfolk State,84,86,0
+Michigan State,Saint Louis,65,61,1
 New Mexico,Louisville,56,59,0
-Marquette,Murray State,62,53,1
-Norfolk State,Florida,50,84,1
+Murray State,Marquette,53,62,0
+Norfolk State,Florida,50,84,0
 Michigan State,Louisville,44,57,0
-Florida,Marquette,68,58,1
-Florida,Louisville,68,72,1
-Vermont,UNC,58,77,1
-Creighton,Alabama,58,57,0
+Marquette,Florida,58,68,0
+Louisville,Florida,72,68,1
+Vermont,UNC,58,77,0
+Alabama,Creighton,57,58,0
 Temple,South Florida,44,58,0
-Michigan,Ohio,60,65,0
-NC State,San Diego State,79,65,1
-Belmont,Georgetown,59,74,1
-Purdue,Saint Mary's,72,69,1
-Kansas,Detroit,65,50,0
-UNC,Creighton,87,73,0
+Ohio,Michigan,65,60,1
+San Diego State,NC State,65,79,0
+Georgetown,Belmont,74,59,1
+Saint Mary's,Purdue,69,72,0
+Detroit,Kansas,50,65,0
+Creighton,UNC,73,87,0
 South Florida,Ohio,56,62,0
-NC State,Georgetown,66,63,0
+NC State,Georgetown,66,63,1
 Purdue,Kansas,60,63,0
-Ohio,UNC,65,73,1
+UNC,Ohio,73,65,1
 Kansas,NC State,60,57,1
-UNC,Kansas,67,80,0
-Kentucky,Western Kentucky,81,66,0
-UConn,Iowa State,64,77,1
+Kansas,UNC,80,67,1
+Kentucky,Western Kentucky,81,66,1
+Iowa State,UConn,77,64,1
 VCU,Wichita State,62,59,1
-Indiana,New Mexico State,79,66,0
-Colorado,UNLV,68,64,1
-Baylor,South Dakota State,68,60,0
-Notre Dame,Xavier,63,67,0
+New Mexico State,Indiana,66,79,0
+UNLV,Colorado,64,68,0
+Baylor,South Dakota State,68,60,1
+Xavier,Notre Dame,67,63,1
 Duke,Lehigh,70,75,0
-Iowa State,Kentucky,71,87,1
+Iowa State,Kentucky,71,87,0
 Indiana,VCU,63,61,1
-Colorado,Baylor,63,80,0
-Xavier,Lehigh,70,58,0
-Indiana,Kentucky,90,102,1
-Xavier,Baylor,70,75,1
-Baylor,Kentucky,70,82,1
-UNC Asheville,Syracuse,65,72,1
-Southern Miss,Kansas State,64,70,1
-Vanderbilt,Harvard,79,70,0
-Wisconsin,Montana,73,49,0
-Cincinnati,Texas,65,59,0
-Florida State,St. Bonaventure,66,63,0
-West Virginia,Gonzaga,54,77,1
-Loyola (MD),Ohio State,59,78,1
-Kansas State,Syracuse,59,75,1
+Baylor,Colorado,80,63,1
+Lehigh,Xavier,58,70,0
+Indiana,Kentucky,90,102,0
+Xavier,Baylor,70,75,0
+Baylor,Kentucky,70,82,0
+Syracuse,UNC Asheville,72,65,1
+Kansas State,Southern Miss,70,64,1
+Vanderbilt,Harvard,79,70,1
+Montana,Wisconsin,49,73,0
+Texas,Cincinnati,59,65,0
+Florida State,St. Bonaventure,66,63,1
+Gonzaga,West Virginia,77,54,1
+Loyola (MD),Ohio State,59,78,0
+Syracuse,Kansas State,75,59,1
 Wisconsin,Vanderbilt,60,57,1
-Florida State,Cincinnati,56,62,1
+Florida State,Cincinnati,56,62,0
 Gonzaga,Ohio State,66,73,0
-Syracuse,Wisconsin,64,63,0
+Wisconsin,Syracuse,63,64,0
 Ohio State,Cincinnati,81,66,1
-Syracuse,Ohio State,70,77,0
-Louisville,Kentucky,61,69,1
-Ohio State,Kansas,62,64,0
-Kansas,Kentucky,59,67,1
+Ohio State,Syracuse,77,70,1
+Louisville,Kentucky,61,69,0
+Kansas,Ohio State,64,62,1
+Kentucky,Kansas,67,59,1

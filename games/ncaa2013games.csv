@@ -1,64 +1,64 @@
 Team_1,Team_2,Team_1_Score,Team_2_Score,Result
-Southern,Gonzaga,58,64,1
-Pitt,Wichita State,55,73,0
+Southern,Gonzaga,58,64,0
+Wichita State,Pitt,73,55,1
 Ole Miss,Wisconsin,57,46,1
 La Salle,Kansas State,63,61,1
-Belmont,Arizona,64,81,1
+Arizona,Belmont,81,64,1
 New Mexico,Harvard,62,68,0
-Iowa State,Notre Dame,76,58,1
-Ohio State,Iona,95,70,0
-Gonzaga,Wichita State,70,76,0
-Ole Miss,La Salle,74,76,0
-Harvard,Arizona,51,74,1
+Notre Dame,Iowa State,58,76,0
+Ohio State,Iona,95,70,1
+Wichita State,Gonzaga,76,70,1
+La Salle,Ole Miss,76,74,1
+Arizona,Harvard,74,51,1
 Ohio State,Iowa State,78,75,1
-Wichita State,La Salle,72,58,0
+La Salle,Wichita State,58,72,0
 Arizona,Ohio State,70,73,0
-Ohio State,Wichita State,66,70,1
-North Carolina A&T;,Louisville,48,79,1
-Colorado State,Missouri,84,72,0
+Wichita State,Ohio State,70,66,1
+Louisville,North Carolina A&T;,79,48,1
+Missouri,Colorado State,72,84,0
 Oregon,Oklahoma State,68,55,1
-New Mexico State,Saint Louis,44,64,1
-Memphis,Saint Mary's,54,52,0
-Valparaiso,Michigan State,54,65,1
-Creighton,Cincinnati,67,63,0
-Albany (NY),Duke,61,73,1
-Colorado State,Louisville,56,82,1
-Oregon,Saint Louis,74,57,0
+Saint Louis,New Mexico State,64,44,1
+Saint Mary's,Memphis,52,54,0
+Valparaiso,Michigan State,54,65,0
+Cincinnati,Creighton,63,67,0
+Albany (NY),Duke,61,73,0
+Colorado State,Louisville,56,82,0
+Oregon,Saint Louis,74,57,1
 Memphis,Michigan State,48,70,0
-Creighton,Duke,50,66,0
-Louisville,Oregon,77,69,0
-Duke,Michigan State,71,61,1
-Duke,Louisville,63,85,1
-Kansas,Western Kentucky,64,57,0
-Villanova,UNC,71,78,1
-VCU,Akron,88,42,0
-South Dakota State,Michigan,56,71,1
+Duke,Creighton,66,50,1
+Oregon,Louisville,69,77,0
+Michigan State,Duke,61,71,0
+Louisville,Duke,85,63,1
+Western Kentucky,Kansas,57,64,0
+Villanova,UNC,71,78,0
+VCU,Akron,88,42,1
+Michigan,South Dakota State,71,56,1
 UCLA,Minnesota,63,83,0
-Florida,Northwestern State,79,47,0
-San Diego State,Oklahoma,70,55,0
-Georgetown,Florida Gulf Coast,68,78,0
-Kansas,UNC,70,58,0
-VCU,Michigan,53,78,0
-Florida,Minnesota,78,64,1
+Florida,Northwestern State,79,47,1
+San Diego State,Oklahoma,70,55,1
+Florida Gulf Coast,Georgetown,78,68,1
+Kansas,UNC,70,58,1
+Michigan,VCU,78,53,1
+Minnesota,Florida,64,78,0
 Florida Gulf Coast,San Diego State,81,71,1
-Kansas,Michigan,85,87,0
-Florida,Florida Gulf Coast,62,50,0
-Michigan,Florida,79,59,0
-James Madison,Indiana,62,83,1
-NC State,Temple,72,76,0
+Michigan,Kansas,87,85,1
+Florida Gulf Coast,Florida,50,62,0
+Michigan,Florida,79,59,1
+James Madison,Indiana,62,83,0
+Temple,NC State,76,72,1
 UNLV,California,61,64,0
-Syracuse,Montana,81,34,0
-Butler,Bucknell,68,56,0
-Davidson,Marquette,58,59,1
-Colorado,Illinois,49,57,1
-Miami (FL),Pacific,78,49,0
-Indiana,Temple,58,52,0
-Syracuse,California,66,60,1
-Marquette,Butler,74,72,1
+Montana,Syracuse,34,81,0
+Bucknell,Butler,56,68,0
+Marquette,Davidson,59,58,1
+Colorado,Illinois,49,57,0
+Pacific,Miami (FL),49,78,0
+Temple,Indiana,52,58,0
+California,Syracuse,60,66,0
+Butler,Marquette,72,74,0
 Miami (FL),Illinois,63,59,1
-Syracuse,Indiana,61,50,1
-Miami (FL),Marquette,61,71,1
-Marquette,Syracuse,39,55,1
-Louisville,Wichita State,72,68,0
-Michigan,Syracuse,61,56,1
-Michigan,Louisville,76,82,1
+Indiana,Syracuse,50,61,0
+Miami (FL),Marquette,61,71,0
+Marquette,Syracuse,39,55,0
+Louisville,Wichita State,72,68,1
+Syracuse,Michigan,56,61,0
+Louisville,Michigan,82,76,1

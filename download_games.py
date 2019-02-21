@@ -35,10 +35,10 @@ def parse_region(region_html, num_games, year):
                 win_score = team2_score
                 lose_score = team1_score
             else:
-                winner = team2
-                loser = team1
-                win_score = team2_score
-                lose_score = team1_score
+                winner = team1
+                loser = team2
+                win_score = team1_score
+                lose_score = team2_score
 
             # randomly insert winner and loser into csv
             rand = np.random.randint(0, 2)

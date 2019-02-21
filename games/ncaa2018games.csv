@@ -1,64 +1,64 @@
 Team_1,Team_2,Team_1_Score,Team_2_Score,Result
-Xavier,Texas Southern,102,83,0
-Florida State,Missouri,67,54,1
-South Dakota State,Ohio State,73,81,1
-UNC Greensboro,Gonzaga,64,68,1
-Houston,San Diego State,67,65,0
-Michigan,Montana,61,47,0
-Texas A&M;,Providence,73,69,0
-Lipscomb,UNC,66,84,1
+Texas Southern,Xavier,83,102,0
+Missouri,Florida State,54,67,0
+South Dakota State,Ohio State,73,81,0
+Gonzaga,UNC Greensboro,68,64,1
+San Diego State,Houston,65,67,0
+Montana,Michigan,47,61,0
+Texas A&M;,Providence,73,69,1
+Lipscomb,UNC,66,84,0
 Xavier,Florida State,70,75,0
 Ohio State,Gonzaga,84,90,0
-Michigan,Houston,64,63,1
-Texas A&M;,UNC,86,65,0
-Gonzaga,Florida State,60,75,1
-Texas A&M;,Michigan,72,99,1
-Florida State,Michigan,54,58,0
-Kansas,Penn,76,60,0
-Seton Hall,NC State,94,83,0
-Clemson,New Mexico State,79,68,0
-Auburn,College of Charleston,62,58,0
-TCU,Syracuse,52,57,0
-Michigan State,Bucknell,82,78,0
-Rhode Island,Oklahoma,83,78,0
-Iona,Duke,67,89,1
-Seton Hall,Kansas,79,83,1
-Clemson,Auburn,84,53,0
-Syracuse,Michigan State,55,53,0
-Duke,Rhode Island,87,62,1
-Clemson,Kansas,76,80,1
-Syracuse,Duke,65,69,0
-Kansas,Duke,85,81,0
+Houston,Michigan,63,64,0
+UNC,Texas A&M;,65,86,0
+Gonzaga,Florida State,60,75,0
+Michigan,Texas A&M;,99,72,1
+Michigan,Florida State,58,54,1
+Kansas,Penn,76,60,1
+NC State,Seton Hall,83,94,0
+Clemson,New Mexico State,79,68,1
+Auburn,College of Charleston,62,58,1
+Syracuse,TCU,57,52,1
+Bucknell,Michigan State,78,82,0
+Oklahoma,Rhode Island,78,83,0
+Iona,Duke,67,89,0
+Seton Hall,Kansas,79,83,0
+Auburn,Clemson,53,84,0
+Syracuse,Michigan State,55,53,1
+Rhode Island,Duke,62,87,0
+Kansas,Clemson,80,76,1
+Duke,Syracuse,69,65,1
+Duke,Kansas,81,85,0
 UMBC,Virginia,74,54,1
 Creighton,Kansas State,59,69,0
-Kentucky,Davidson,78,73,0
+Kentucky,Davidson,78,73,1
 Buffalo,Arizona,89,68,1
 Miami (FL),Loyola (IL),62,64,0
-Wright State,Tennessee,47,73,1
-Texas,Nevada,83,87,1
-Georgia State,Cincinnati,53,68,1
-UMBC,Kansas State,43,50,0
-Buffalo,Kentucky,75,95,1
-Loyola (IL),Tennessee,63,62,0
-Cincinnati,Nevada,73,75,1
-Kansas State,Kentucky,61,58,0
-Loyola (IL),Nevada,69,68,0
+Tennessee,Wright State,73,47,1
+Nevada,Texas,87,83,1
+Georgia State,Cincinnati,53,68,0
+Kansas State,UMBC,50,43,1
+Buffalo,Kentucky,75,95,0
+Tennessee,Loyola (IL),62,63,0
+Nevada,Cincinnati,75,73,1
+Kansas State,Kentucky,61,58,1
+Nevada,Loyola (IL),68,69,0
 Loyola (IL),Kansas State,78,62,1
-Radford,Villanova,61,87,1
+Villanova,Radford,87,61,1
 Virginia Tech,Alabama,83,86,0
-Murray State,West Virginia,68,85,1
-Wichita State,Marshall,75,81,0
-St. Bonaventure,Florida,62,77,1
-Stephen F. Austin,Texas Tech,60,70,1
-Butler,Arkansas,79,62,1
-Purdue,Cal State Fullerton,74,48,0
-Villanova,Alabama,81,58,0
-West Virginia,Marshall,94,71,0
+West Virginia,Murray State,85,68,1
+Marshall,Wichita State,81,75,1
+St. Bonaventure,Florida,62,77,0
+Texas Tech,Stephen F. Austin,70,60,1
+Arkansas,Butler,62,79,0
+Purdue,Cal State Fullerton,74,48,1
+Alabama,Villanova,58,81,0
+Marshall,West Virginia,71,94,0
 Texas Tech,Florida,69,66,1
-Purdue,Butler,76,73,1
-Villanova,West Virginia,90,78,0
-Purdue,Texas Tech,65,78,1
-Villanova,Texas Tech,71,59,0
-Kansas,Villanova,79,95,1
+Butler,Purdue,73,76,0
+West Virginia,Villanova,78,90,0
+Texas Tech,Purdue,78,65,1
+Texas Tech,Villanova,59,71,0
+Villanova,Kansas,95,79,1
 Michigan,Loyola (IL),69,57,1
-Michigan,Villanova,62,79,1
+Villanova,Michigan,79,62,1
