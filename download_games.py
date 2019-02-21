@@ -4,6 +4,7 @@ import csv
 import requests
 
 games_per_round = [8, 4, 2, 1]
+final_four_games = [2, 1]
 regions = ['west', 'midwest', 'south', 'east']
 
 """TODO 
@@ -29,6 +30,9 @@ def write_year(year):
     for i in range(0, len(regions)):
         region = soup.find(id=regions[i])
         parse_region(region, games_per_round)
+
+    final_four = soup.find(id="national")
+    parse_region(final_four, final_four_games)
 
 
 
