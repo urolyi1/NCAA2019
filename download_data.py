@@ -57,7 +57,7 @@ def generate():
 
 
 pom2ref = {'Arkansas Little Rock':'Little Rock','Alabama St.': 'Alabama State', 'UAB': 'Alabama-Birmingham', 'Albany': 'Albany (NY)', 'Alcorn St.': 'Alcorn State', 'Appalachian St.': 'Appalachian State', \
-           'Arizona St.': 'Arizona State', 'Arkansas St.': 'Arkansas State', 'Arkansas Pine Bluff': 'Arkansas-Pine Bluff', 'Ball St.': 'Ball State', 'Bethune Cookman': 'Bethune-Cookman', \
+           'Arizona St.': 'Arizona State', 'Arkansas St. ': 'Arkansas State', 'Arkansas Pine Bluff': 'Arkansas-Pine Bluff', 'Ball St.': 'Ball State', 'Bethune Cookman': 'Bethune-Cookman', \
            'Boise St.': 'Boise State', 'Bowling Green': 'Bowling Green State', 'BYU': 'Brigham Young', 'Cal St. Bakersfield': 'Cal State Bakersfield', 'Cal St. Fullerton': 'Cal State Fullerton', \
            'Cal St. Northridge': 'Cal State Northridge', 'Central Connecticut': 'Central Connecticut State', 'UCF': 'Central Florida', 'Chicago St.': 'Chicago State', 'The Citadel': 'Citadel', \
            'Cleveland St.': 'Cleveland State', 'Colorado St.': 'Colorado State', 'Coppin St.': 'Coppin State', 'Delaware St.': 'Delaware State', 'Detroit': 'Detroit Mercy', \
