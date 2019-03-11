@@ -11,7 +11,10 @@ conversion = {"UNC Greensboro": "North Carolina-Greensboro", "UNC":"North Caroli
               "UNC Asheville":"North Carolina-Asheville","Pitt":"Pittsburgh","Ole Miss":"Mississippi",\
               "LSU":"Louisiana State",'BYU':"Brigham Young",'UMass':"Massachusetts","UNLV":"Nevada-Las Vegas",\
               "LIU-Brooklyn":"Long Island University","Detroit":"Detroit Mercy","Southern Miss":"Southern Mississippi",\
-              "Texas A&M;":"Texas A&M","North Carolina A&T;":"North Carolina A&T"}
+              "Texas A&M;":"Texas A&M","North Carolina A&T;":"North Carolina A&T","UCSB":"UC-Santa Barbara",\
+              "UTSA":"Texas-San Antonio","St. Peter's":"Saint Peter's",'UTEP':"Texas-El Paso",\
+              "Central Connecticut":"Central Connecticut State","UCF":"Central Florida",\
+              "UIC":"Illinois-Chicago"}
 
 
 location = lambda array, word: array[[i[0] for i in array].index(word)][1:]

@@ -1,0 +1,64 @@
+Team_1,Team_2,Team_1_Score,Team_2_Score,Result
+Texas,UNC Asheville,82,61,1
+Purdue,LSU,80,56,1
+BYU,UConn,53,58,0
+Stanford,San Diego,77,69,1
+Maryland,UNC Wilmington,75,73,1
+Xavier,Troy,71,59,1
+Michigan State,Colorado,79,64,1
+Florida,Sam Houston State,85,55,1
+Texas,Purdue,77,67,1
+Stanford,UConn,74,85,0
+Xavier,Maryland,64,77,0
+Florida,Michigan State,46,68,0
+Texas,UConn,82,78,1
+Michigan State,Maryland,60,58,1
+Michigan State,Texas,76,85,0
+Oklahoma,South Carolina State,71,54,1
+California,NC State,76,74,1
+Mississippi State,Butler,46,47,0
+Austin Peay,Louisville,64,86,0
+Oklahoma State,Penn,77,63,1
+Syracuse,Manhattan,76,65,1
+St. Joseph's,Auburn,63,65,0
+ETSU,Wake Forest,73,76,0
+California,Oklahoma,65,74,0
+Louisville,Butler,71,79,0
+Syracuse,Oklahoma State,68,56,1
+Wake Forest,Auburn,62,68,0
+Oklahoma,Butler,65,54,1
+Auburn,Syracuse,78,79,0
+Oklahoma,Syracuse,47,63,0
+Kentucky,IUPUI,95,64,1
+Utah,Oregon,60,58,1
+Wisconsin,Weber State,81,74,1
+Tulsa,Dayton,84,71,1
+Missouri,Southern Illinois,72,71,1
+Holy Cross,Marquette,68,72,0
+Alabama,Indiana,62,67,0
+Wagner,Pitt,61,87,0
+Utah,Kentucky,54,74,0
+Tulsa,Wisconsin,60,61,0
+Missouri,Marquette,92,101,0
+Pitt,Indiana,74,52,1
+Wisconsin,Kentucky,57,63,0
+Pitt,Marquette,74,77,0
+Kentucky,Marquette,69,83,0
+Arizona,Vermont,80,51,1
+Cincinnati,Gonzaga,69,74,0
+Milwaukee,Notre Dame,69,70,0
+Western Kentucky,Illinois,60,65,0
+Creighton,Central Michigan,73,79,0
+Colorado State,Duke,57,67,0
+Arizona State,Memphis,84,71,1
+Utah State,Kansas,61,64,0
+Arizona,Gonzaga,96,95,1
+Notre Dame,Illinois,68,60,1
+Duke,Central Michigan,86,60,1
+Arizona State,Kansas,76,108,0
+Arizona,Notre Dame,88,71,1
+Kansas,Duke,69,65,1
+Kansas,Arizona,78,75,1
+Texas,Syracuse,84,95,0
+Kansas,Marquette,94,61,1
+Kansas,Syracuse,78,81,0
