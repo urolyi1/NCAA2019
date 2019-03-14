@@ -4,24 +4,23 @@ import csv
 import requests
 import itertools, random
 
-def into_words(row):
+def into_words(row):#converts a row of HTML into text
     return [[j.contents[0] for j in i.find_all('a')] for i in row]
 
 def parse(level):
-    #check if one team left
-    kk = level.find_all("div")
+    rows = level.find_all("div")
     
-    for i in range(len(kk)):
-        kk[i] = into_words(kk[i].find_all('div'))
-    return [i for i in kk if i != []]
+    for i in range(len(rows)):
+        rows[i] = into_words(rows[i].find_all('div'))
+    return [i for i in rows if i != []]
 
 def download(year):
     r = requests.get("https://www.sports-reference.com/cbb/postseason/" + str(year) +"-ncaa.html")
     soup = BeautifulSoup(r.text, 'html.parser')
     rounds = soup.find_all("div", attrs = {"class":"round"})
 
-    rounds_parsed = [parse(i) for i in rounds]##
-    rounds_parsed = list(itertools.chain.from_iterable([i for i in rounds_parsed if len(i[0]) != 1]))
+    rounds_parsed = [parse(i) for i in rounds]#Gives us a list of data [[team1, score1], [team2, score2]]
+    rounds_parsed = list(itertools.chain.from_iterable([i for i in rounds_parsed if len(i[0]) != 1])) #combines all matchups
     return rounds_parsed
 
 def write(year):
