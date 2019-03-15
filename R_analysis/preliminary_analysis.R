@@ -1,12 +1,37 @@
 library(readr)
-ncaa2018 <- read_csv("~/repositories/NCAA2019/statsandgames/ncaa2018gamesdata.csv")
-ncaa2018 <- ncaa2018 +  read_csv("~/NCAA2019/statsandgames/ncaa2017gamesdata.csv")
-ncaa2018 <- ncaa2018 +  read_csv("~/NCAA2019/statsandgames/ncaa2016gamesdata.csv")
-ncaa2018 <- ncaa2018 +  read_csv("~/NCAA2019/statsandgames/ncaa2015gamesdata.csv")
-ncaa2018 <- ncaa2018 +  read_csv("~/NCAA2019/statsandgames/ncaa2014gamesdata.csv")
-#model <- lm((ncaa2018$Points1 - ncaa2018$Points2) ~ (ncaa2018$`3P%1`* (ncaa2018$`3PA1`/ ncaa2018$G1)) + 
- #             (ncaa2018$`3P%2`* (ncaa2018$`3PA2`/ ncaa2018$G2)) + (ncaa2018$`FG%2`* (ncaa2018$`FGA2`/ ncaa2018$G2)) +
-  #            (ncaa2018$`FG%2`* (ncaa2018$`FGA2`/ ncaa2018$G2)))
-model <- lm((ncaa2018$Points1 - ncaa2018$Points2) ~ ncaa2018$AdjD1 + ncaa2018$AdjD2 + ncaa2018$AdjO1*ncaa2018$AdjT1
-            + ncaa2018$AdjO2*ncaa2018$AdjT2 + ncaa2018$`FT%1`  + ncaa2018$`FT%2`)
-summary(model)
+library(Metrics)
+
+file_path <- "~/repositories/NCAA2019/statsandgames/" #change to your file path to the data
+
+
+
+files <- list.files(path=file_path, pattern="*.csv") #get all files with .csv extension
+
+ncaaData <- read.csv(paste(file_path, files[1], sep=""), check.names=TRUE) #add first year
+
+for (i in 2:length(files)) {
+  temp <- read.csv(paste(file_path, files[i], sep=""), check.names=TRUE)
+  ncaaData <- rbind(ncaaData, temp) #append next year
+}
+
+startYear <- 2011
+endYear <- 2014
+testYear <- 2015
+
+startIndex <- (startYear - 2002) * 63 + 1
+endIndex <- (endYear - 2002) * 63 + 1
+trainingData <- ncaaData[startIndex:endIndex,]
+
+testStart <- (testYear - 2002) * 63 + 1
+testEnd <- testStart + 62
+testData <- ncaaData[testStart:testEnd,]
+
+model <- glm(Result ~ AdjO1 + AdjO2 + AdjD1 + AdjD2 + FT.1 + FT.2, data=trainingData, family="binomial")
+pred <- predict(model, testData, type="response")
+ind <- pred < .05
+pred[ind] <- .05
+ind <- pred > .95
+pred[ind] <- .95
+
+
+logLoss(testData$Result, pred)
