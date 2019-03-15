@@ -48,19 +48,25 @@ def model(train, test_year, params, cap = pow(10, -5)):
     return array
    # return -1 * sum([log_loss(test_y[i], log.predict([test_x[i]])[0]) for i in range(len(test_x))])/len(test_x)
 
+#2014 model: 6th place
+print(2014)
+z = model([2012, 2013, 2011], 2014, set({50,51,103, 104, 28, 81}), 0.05)
 
 #2015 model: 6th place (0.454)
+print(2015)
 z = model([2012, 2013, 2014], 2015, set({50,51,103, 104, 28, 81}), 0.05)
 
 #2016 model: 2nd place (0.495)
+print(2016)
 z = model([2013, 2015, 2014], 2016, set({50,51,103, 104, 28, 81}), 0.05)
 
 #2017 model: 4th place (0.456)
+print(2017)
 z = model([2016, 2015, 2014], 2017, set({50,51,103, 104, 28, 81}), 0.05)
 
 #2018 model: 2nd place (0.53196)
-z = model([2016, 2015, 2017], 2018, set({50,51,103, 104, 28, 81}), 0.05)
-
+print(2018)
+z = model([2016, 2015, 2017], 2018, set({50,51,103, 104, 28, 81}), 0.1)
 
 
 
