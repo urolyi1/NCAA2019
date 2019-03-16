@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression as line, LogisticRegression as logit
+from sklearn.metrics import r2_score as r2
 from math import log
 from itertools import compress
 import csv
@@ -48,25 +49,53 @@ def model(train, test_year, params, cap = pow(10, -5)):
     return array
    # return -1 * sum([log_loss(test_y[i], log.predict([test_x[i]])[0]) for i in range(len(test_x))])/len(test_x)
 
+def model2(train, test_year, params, cap = pow(10, -5)):
+    params2 = set(params | {2,3})
+    x,y = download(train, params2)
+    z = [i[0] - i[1] for i in x]
+    x = np.array([i[2:] for i in x])
+    reg = line().fit(x, z)
+    x2 = [reg.predict([i]) for i in x]
+    log = logit(solver = 'liblinear').fit(x2, y)
+    print(log.predict_proba([[-10],[-5],[0],[5],[10]]), ": should be around 50%")
+   # print([log.predict_proba([[i]])[0][1] for i in np.linspace(-20, 20, 10)])
+    plt.plot(np.linspace(-20, 20, 10000),[log.predict_proba([[i]])[0][1] for i in np.linspace(-20, 20, 10000)])
+    plt.show()
+
+    test_x1, test_y = download([test_year], params2)
+    test_x = [reg.predict([i[2:]]) for i in test_x1]
+#    print("R^2 value: ", r2([i[0] - i[1] for i in test_x1],[i[0] for i in test_x]))
+
+    '''Calculate log loss:'''
+    u = [[test_x[i][0], test_x1[i][0] - test_x1[i][1]] for i in range(len(test_x))]
+    array = [[test_y[i], log.predict_proba([test_x[i]])[0][1]] for i in range(len(test_x))]
+    logs = [log_loss(i[0], i[1], cap) for i in array]
+    print(-sum(logs)/len(logs))
+    return u
+    
+
+
 #2014 model: 6th place
 print(2014)
 z = model([2012, 2013, 2011], 2014, set({50,51,103, 104, 28, 81}), 0.05)
-
+z2 = model2([2012, 2013, 2011, 2014, 2015, 2016, 2017], 2018, set({50,51,103, 104, 28, 81}), 0.05)
 #2015 model: 6th place (0.454)
 print(2015)
 z = model([2012, 2013, 2014], 2015, set({50,51,103, 104, 28, 81}), 0.05)
-
+z2 = model2([2012, 2013, 2014], 2015, set({50,51,103, 104, 28, 81}), 0.05)
 #2016 model: 2nd place (0.495)
 print(2016)
 z = model([2013, 2015, 2014], 2016, set({50,51,103, 104, 28, 81}), 0.05)
-
+z2 = model2([2013, 2015, 2014], 2016, set({50,51,103, 104, 28, 81}), 0.05)
 #2017 model: 4th place (0.456)
 print(2017)
 z = model([2016, 2015, 2014], 2017, set({50,51,103, 104, 28, 81}), 0.05)
-
+z2 =model2([2016, 2015, 2014], 2017, set({50,51,103, 104, 28, 81}), 0.05)
 #2018 model: 2nd place (0.53196)
 print(2018)
 z = model([2016, 2015, 2017], 2018, set({50,51,103, 104, 28, 81}), 0.1)
+z2 = model2([2016, 2015, 2017], 2018, set({50,51,103, 104, 28, 81}), 0.1)
+
 
 
 
