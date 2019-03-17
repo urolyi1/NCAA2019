@@ -6,9 +6,14 @@ from math import log
 from itertools import compress
 import csv
 
-def download(years, params):
+def download(years, params, interact = None):
     X = []
     Y = []
+
+    if interact:
+        j = sorted(list(params))
+        interact = [(j.index(i[0]), j.index(i[1])) for i in interact]
+
     for year in years:
         with open('ncaa' + str(year) + 'gamesdata.csv') as csvfile:
             readCSV = csv.reader(csvfile, delimiter=',')
@@ -18,6 +23,12 @@ def download(years, params):
                     X.append(list(compress(i, parameters)))
                     X[-1] = [float(i) for i in X[-1]]
                     Y.append(int(i[4]))
+                    if interact:
+                        for i in interact:
+                            X[-1][i[0]] *= X[-1][i[1]]
+                        for i in interact:
+                            X[-1][i[1]] = None
+                        X[-1] = [i for i in X[-1] if i != None]
     return X,Y
 
 def log_loss(true, pred, cap = pow(10, -5)):
@@ -37,34 +48,34 @@ RETURNS:
 the list of probabilities
 prints the log loss
 '''
-def model(train, test_year, params, cap = pow(10, -5)):
+def model(train, test_year, params, cap = pow(10, -5), interact = None):
     param = set(params)
-    x,y = download(train, params)
+    x,y = download(train, params, interact)
     log = logit(solver = 'liblinear', max_iter = 1000).fit(np.array(x),np.array(y))
 
-    test_x, test_y = download([test_year], params)
+    test_x, test_y = download([test_year], params, interact)
     array = [[test_y[i], log.predict_proba([test_x[i]])[0][1]] for i in range(len(test_x))]
     logs = [log_loss(i[0], i[1], cap) for i in array]
     print(-sum(logs)/len(logs))
     return array
    # return -1 * sum([log_loss(test_y[i], log.predict([test_x[i]])[0]) for i in range(len(test_x))])/len(test_x)
 
-def model2(train, test_year, params, cap = pow(10, -5)):
+def model2(train, test_year, params, cap = pow(10, -5), interact = None):
     params2 = set(params | {2,3})
-    x,y = download(train, params2)
+    x,y = download(train, params2, interact)
     z = [i[0] - i[1] for i in x]
     x = np.array([i[2:] for i in x])
     reg = line().fit(x, z)
     x2 = [reg.predict([i]) for i in x]
     log = logit(solver = 'liblinear').fit(x2, y)
-    print(log.predict_proba([[-10],[-5],[0],[5],[10]]), ": should be around 50%")
+   # print(log.predict_proba([[-10],[-5],[0],[5],[10]]), ": should be around 50%")
    # print([log.predict_proba([[i]])[0][1] for i in np.linspace(-20, 20, 10)])
-    plt.plot(np.linspace(-20, 20, 10000),[log.predict_proba([[i]])[0][1] for i in np.linspace(-20, 20, 10000)])
-    plt.show()
+   # plt.plot(np.linspace(-20, 20, 10000),[log.predict_proba([[i]])[0][1] for i in np.linspace(-20, 20, 10000)])
+    #plt.show()
 
-    test_x1, test_y = download([test_year], params2)
+    test_x1, test_y = download([test_year], params2, interact)
     test_x = [reg.predict([i[2:]]) for i in test_x1]
-#    print("R^2 value: ", r2([i[0] - i[1] for i in test_x1],[i[0] for i in test_x]))
+    print("R^2 value: ", r2(z, x2))
 
     '''Calculate log loss:'''
     u = [[test_x[i][0], test_x1[i][0] - test_x1[i][1]] for i in range(len(test_x))]
@@ -77,8 +88,10 @@ def model2(train, test_year, params, cap = pow(10, -5)):
 
 #2014 model: 6th place
 print(2014)
-z = model([2012, 2013, 2011], 2014, set({50,51,103, 104, 28, 81}), 0.05)
-z2 = model2([2012, 2013, 2011, 2014, 2015, 2016, 2017], 2018, set({50,51,103, 104, 28, 81}), 0.05)
+z = model([2012, 2013, 2011], 2014, set({50,51, 103, 104, 28, 81}), 0.05)
+z = model([2012, 2013, 2011], 2014, set({50,51, 103, 104,28, 81, 52, 105}), 0.05, [[50, 52], [103, 105], [51, 52], [104, 105]])
+z = model2([2012, 2013, 2011], 2014, set({50,51, 103, 104,28, 81, 52, 105}), 0.05, [[50, 52], [103, 105], [51, 52], [104, 105]])
+z2 = model2([2012, 2013, 2011], 2014, set({50,51, 103, 104, 28, 81}), 0.05)#,  [[50, 52], [103, 105]])
 #2015 model: 6th place (0.454)
 print(2015)
 z = model([2012, 2013, 2014], 2015, set({50,51,103, 104, 28, 81}), 0.05)
