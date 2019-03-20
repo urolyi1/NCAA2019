@@ -78,7 +78,10 @@ pom2ref = {'Arkansas Little Rock':'Little Rock','Alabama St.': 'Alabama State', 
            "St. John's": "St. John's (NY)", 'Tennessee St.': 'Tennessee State', 'Tennessee Martin': 'Tennessee-Martin', 'Texas A&M Corpus Chris': 'Texas A&M-Corpus Christi', 'TCU': 'Texas Christian', \
            'Texas St.': 'Texas State', 'UT Arlington': 'Texas-Arlington', 'UTEP': 'Texas-El Paso', 'Troy St.':"Troy",'UT Rio Grande Valley': 'Texas-Rio Grande Valley', 'UTSA': 'Texas-San Antonio', 'UC Davis': 'UC-Davis', \
            'UC Irvine': 'UC-Irvine', 'UC Riverside': 'UC-Riverside', 'UC Santa Barbara': 'UC-Santa Barbara', 'California': 'University of California', 'Utah St.': 'Utah State', \
-           'VCU': 'Virginia Commonwealth', 'Washington St.': 'Washington State','Weber St.': 'Weber State', 'Wichita St.': 'Wichita State', 'Wright St.': 'Wright State', 'Youngstown St.': 'Youngstown State'}
+           'VCU': 'Virginia Commonwealth', 'Washington St.': 'Washington State','Weber St.': 'Weber State', 'Wichita St.': 'Wichita State', 'Wright St.': 'Wright State', 'Youngstown St.': 'Youngstown State',\
+           "Louisiana Lafayette":"Louisiana"}
+
+bas2ref = {'California-Irvine':'UC-Irvine','Louisiana-Lafayette':"Louisiana","Arkansas-Little Rock":"Little Rock"}
 
 
 head = ['School', 'G', 'W', 'L', 'W-L%', 'SRS', 'SOS', 'W', 'L', 'W', 'L', 'W', 'L', 'Tm.', 'Opp.', '', 'Pace', 'ORtg', 'FTr', '3PAr', 'TS%', 'TRB%', 'AST%', 'STL%', 'BLK%', 'eFG%', 'TOV%', 'ORB%', 'FT/FGA','AdjEM', 'AdjO', 'AdjD', 'AdjT', 'Luck', 'SOS AdjEM', 'OppO','OppD','NCSOS AdjEM']
@@ -106,7 +109,9 @@ def pom2_school(row):
     return replace(u[1].find('a').contents[0])
 
 def pom(year):
-    r = requests.get("https://web.archive.org/web/20130316035756/http://kenpom.com/index.php")
+    r = requests.get("https://web.archive.org/web/20160317024513/http://kenpom.com:80/index.php")
+#    r = requests.get("https://web.archive.org/web/20140319053742/http://kenpom.com/index.php")
+    #r = requests.get("https://web.archive.org/web/20130316035756/http://kenpom.com/index.php")
     soup = BeautifulSoup(r.text, features='html.parser')
     array = soup.find('tbody').find_all('tr')
     u = []
@@ -116,8 +121,17 @@ def pom(year):
             u.append([j] + ken2_row(i))
     return sorted(u)
 
+def gf2(row):
+    a = [i.contents[0] if i.contents != [] else '' for i in row.find_all('td')]
+    if a == []:
+        return []
+    a[1] = a[1].contents[0]
+    if a[1] in bas2ref:
+        a[1] = bas2ref[a[1]]
+    return a[1:]
+
 def bball(year):
-    r = requests.get("https://www.sports-reference.com/cbb/seasons/" + str(year) + "-advanced-school-stats.html")
+    r = requests.get("https://web.archive.org/web/20160316031341/http://www.sports-reference.com/cbb/seasons/2016-advanced-school-stats.html")
 
     #Parses HTML
     soup = BeautifulSoup(r.text,'html.parser')
@@ -129,8 +143,12 @@ def bball(year):
     u = []
     index = 0
     for i in array:
-        if get_school(i):
-            u.append(get_fields(i))
+        j = gf2(i)
+        if j != []:
+            u.append(j)
+
+        #if get_school(i):
+         #   u.append(get_fields(i))
 
     u = sorted(u, key = lambda x: x[0])
     return u

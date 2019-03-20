@@ -24,10 +24,20 @@ def get_fields(row):
     k = row.find_all("td",attrs = {'class':'right'})
     return [get_school(row)] + [i.contents[0] if len(i.contents) != 0 else "" for i in k]
 
+
+def gf2(row):
+    a = [i.contents[0] if i.contents != [] else '' for i in row.find_all('td')]
+    if a == []:
+        return []
+    bas2ref = {'California-Irvine':'UC-Irvine','Louisiana-Lafayette':"Louisiana","Arkansas-Little Rock":"Little Rock"}
+    a[1] = a[1].contents[0]
+    if a[1] in bas2ref:
+        a[1] = bas2ref[a[1]]
+    return a[1:]
+
 def create_year(year):
     #downloads HTML
-    r = requests.get("https://www.sports-reference.com/cbb/seasons/" + str(year) + "-school-stats.html")
-
+    r = requests.get("https://web.archive.org/web/20160316031341/http://www.sports-reference.com/cbb/seasons/2016-school-stats.html")
     #Parses HTML
     soup = BeautifulSoup(r.text,'html.parser')
 
@@ -35,11 +45,13 @@ def create_year(year):
     name_box = soup.find('tbody')
     #List of all the <tr> within the <tbody>
     array = name_box.find_all('tr')
-    answer =[heading(soup)]
+    answer =[['School', 'G', 'W', 'L', 'W-L%', 'SRS', 'SOS', 'ConfW', 'ConfL', 'HomeW', 'HomeL', 'AwayW', 'AwayL', 'Tm.', 'Opp.', 'MP', 'FG', 'FGA', 'FG%', '3P', '3PA', '3P%', 'FT', 'FTA', 'FT%', 'ORB', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF']]
     #Python code to write to a CSV
     for i in array:
-        if get_school(i):
-            answer.append(get_fields(i))
+        j = gf2(i)
+        if j != []:
+#            j = j[:16] + [0] + j[16:]
+            answer.append(j)
 
     return answer
 
@@ -60,9 +72,10 @@ def formula(array1, array2):
 def put_in(year):
     reader = read_in(year)
     reader = [i[:15] + i[16:] for i in reader]
-
     elementary = create_year(year)
+    print(elementary[0])
     elementary = [i[:1] + i[16:] for i in elementary]
+    print(elementary[0])
     new_one = [formula(reader[0], elementary[0])]
     elementary = sorted(elementary[1:], key = lambda x: x[0])
 
@@ -70,7 +83,7 @@ def put_in(year):
     new_one[0][9] = "HomeW";new_one[0][10] = "HomeL"
     new_one[0][11] = "AwayW";new_one[0][12] = "AwayL"
     
-    #new_one[0] = ['School', 'G', 'W', 'L', 'W-L%', 'SRS', 'SOS', 'ConfW', 'ConfL', 'HomeW', 'HomeL', 'AwayW', 'AwayL', 'Tm.', 'Opp.', 'MP', 'FG', 'FGA', 'FG%', '3P', '3PA', '3P%', 'FT', 'FTA', 'FT%', 'ORB', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'Pace', 'ORtg', 'FTr', '3PAr', 'TS%', 'TRB%', 'AST%', 'STL%', 'BLK%', 'eFG%', 'TOV%', 'ORB%', 'FT/FGA', 'AdjEM', 'AdjO', 'AdjD', 'AdjT', 'Luck', 'SOS AdjEM', 'OppO', 'OppD', 'NCSOS AdjEM']
+    new_one[0] = ['School', 'G', 'W', 'L', 'W-L%', 'SRS', 'SOS', 'ConfW', 'ConfL', 'HomeW', 'HomeL', 'AwayW', 'AwayL', 'Tm.', 'Opp.','MP', 'FG', 'FGA', 'FG%', '3P', '3PA', '3P%', 'FT', 'FTA', 'FT%', 'ORB', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'Pace', 'ORtg', 'FTr', '3PAr', 'TS%', 'TRB%', 'AST%', 'STL%', 'BLK%', 'eFG%', 'TOV%', 'ORB%', 'FT/FGA', 'AdjEM', 'AdjO', 'AdjD', 'AdjT', 'Luck', 'SOS AdjEM', 'OppO', 'OppD', 'NCSOS AdjEM']
     
     index = 0
     for i in reader[1:]:
