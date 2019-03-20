@@ -96,15 +96,24 @@ def ken_row(row):
         return None
     return [i.contents[0] for i in k if i.find('span') == None][-9:]
 
+def ken2_row(row):
+    return [i.contents[0] for i in row.find_all('td')[4:] if i.find('span') == None]
+
+def pom2_school(row):
+    u = row.find_all('td')
+    if u == []:
+        return None
+    return replace(u[1].find('a').contents[0])
+
 def pom(year):
-    r = requests.get("https://kenpom.com/index.php?y="  + str(year) + "&s=TeamName")
-    soup = BeautifulSoup(r.text, 'html.parser')
+    r = requests.get("https://web.archive.org/web/20130316035756/http://kenpom.com/index.php")
+    soup = BeautifulSoup(r.text, features='html.parser')
     array = soup.find('tbody').find_all('tr')
     u = []
     for i in array:
-        j = pom_school(i)
+        j = pom2_school(i)
         if j:
-            u.append([j] + ken_row(i))
+            u.append([j] + ken2_row(i))
     return sorted(u)
 
 def bball(year):
